@@ -71,8 +71,8 @@ The command line interface after you've done guessing a few riddles an unlocking
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
+[![Watch the video](assets/working_interface.mp4)](https://youtu.be/VIDEO_ID)
+The video demonstrates the total working of the terminal interface/escape room. Here, there are basic commands like "cd" and "ls" used. To unlock them and finally leave the escape room,, you've to solve the riddle. The video gives us the general working of the interface and the answers to a few riddles given. If not answered correctly, the AI roasts you. You can refer the escape-status for the remaining commands to be unlocked. 
 
 # Additional Demos
 

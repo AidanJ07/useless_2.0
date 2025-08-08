@@ -45,20 +45,20 @@ For Software:
 This is the homepage of the whole command interface where you are able to input basic unix commands.
 
 ![Screenshot2]
-<img width="3188" height="1202" alt="frame (3)" src="https://drive.google.com/file/d/1UY7D6sJVPzS8Sy_o9ZsX_GiUowczjfj6/view?usp=sharing" />
+<img src="assets/3.png" alt="Screenshot" width="600">
 
 Here's the first riddle for unlocking one of the unix commands.
 
 ![Screenshot3]
-<img width="3188" height="1202" alt="frame (3)" src="https://drive.google.com/file/d/1wFi2_0ric9TEUCpw79gHp-wzNRRdNyER/view?usp=drive_link" />
+<img src="assets/4.png" alt="Screenshot" width="600">
 If you guessed it wrong, then BAAM!, get roasted by ARTIFICIAL INTELLIGENCE
 
 ![Screenshot4]
-<img width="3188" height="1202" alt="frame (3)" src="https://drive.google.com/file/d/11p_zPu-loIGNsbTjKgeyeqnFidFBUceb/view?usp=drive_link" />
+<img src="assets/5.png" alt="Screenshot" width="600">
 But if you did guess it right, you have this and congrats, you've unlocked one command out of the 10 to be unlocked
 
 ![Screenshot4]
-<img width="3188" height="1202" alt="frame (3)" src="https://drive.google.com/file/d/1kQVJ7qdcGrjpahVGCCib_dra2IJuo7j0/view?usp=drive_link" />
+<img src="assets/6.png" alt="Screenshot" width="600">
 The command line interface after you've done guessing a few
 
 

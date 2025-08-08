@@ -21,6 +21,7 @@ The problem that didn't exist that I made up is that you can't easily access the
 The solution that I proposed for the problem I created is that you've to manually earn the right to use each commands. You have to solve a riddle when you try to implement a command in your knowledge. The roasts by the AI will help you lighten up the mood and try again. Only by solving the riddle can you use the command in the command line interface and escape the room.
 
 ## Technical Details
+
 ### Technologies/Components Used
 For Software:
 - **HTML5**: Semantic structure and accessibility
@@ -33,7 +34,7 @@ For Software:
 ### Implementation
 For Software:
 - In any modern web browser, run the "index.html" file.
-- 
+
 # Run
 
 ### Project Documentation

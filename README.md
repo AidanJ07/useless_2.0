@@ -41,26 +41,32 @@ For Software:
 For Software:
 
 
-# Screenshots (Add at least 3)
+# Screenshots
 <img src="assets/1.png" alt="Screenshot" width="600">
+
 This is the homepage of the whole command interface where you are able to input basic unix commands.
 
-![Screenshot2]
+## Screenshot 2
 <img src="assets/3.png" alt="Screenshot" width="600">
 
 Here's the first riddle for unlocking one of the unix commands.
 
-![Screenshot3]
+
+## Screenshot 3
 <img src="assets/4.png" alt="Screenshot" width="600">
+
 If you guessed it wrong, then BAAM!, get roasted by ARTIFICIAL INTELLIGENCE
 
-![Screenshot4]
+
+## Screenshot 4
 <img src="assets/5.png" alt="Screenshot" width="600">
+
 But if you did guess it right, you have this and congrats, you've unlocked one command out of the 10 to be unlocked
 
-![Screenshot4]
+## Screenshot 5
 <img src="assets/6.png" alt="Screenshot" width="600">
-The command line interface after you've done guessing a few
+
+The command line interface after you've done guessing a few riddles an unlocking commands.
 
 
 ### Project Demo

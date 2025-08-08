@@ -41,7 +41,7 @@ For Software:
 
 
 # Screenshots (Add at least 3)
-<img width="3188" height="1202" alt="frame (3)" src="https://drive.google.com/file/d/1ZHKDqMmp2CsXgFpLIEDDFJthvmp-zXOQ/view?usp=sharing" />
+<img src="assets/1.png" alt="Screenshot" width="600">
 This is the homepage of the whole command interface where you are able to input basic unix commands.
 
 ![Screenshot2]

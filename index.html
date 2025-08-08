@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎮 Escape Room Terminal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Video Background -->
+    <div class="video-background">
+        <video autoplay muted loop playsinline>
+            <source src="https://videos.pexels.com/video-files/3130284/3130284-uhd_2560_1440_30fps.mp4" type="video/mp4">
+            <!-- Fallback for browsers that don't support the video -->
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <!-- Dark overlay -->
+    <div class="video-overlay"></div>
+    
+    <div class="terminal-container">
+        <!-- Terminal Header -->
+        <div class="terminal-header">
+            <div class="terminal-buttons">
+                <span class="btn-close"></span>
+                <span class="btn-minimize"></span>
+                <span class="btn-maximize"></span>
+            </div>
+            <div class="terminal-title">
+                🎮 Escape Room Terminal - Unlock all commands to escape!
+            </div>
+        </div>
+
+        <!-- Terminal Content -->
+        <div class="terminal-content">
+            <!-- Welcome Message -->
+            <div class="welcome-message">
+                <pre id="welcome-text">
+╔══════════════════════════════════════════════════════════════╗
+║                    🎮 ESCAPE ROOM TERMINAL 🎮                ║
+║                                                              ║
+║  Welcome to the Command-Line Escape Room!                   ║
+║                                                              ║
+║  🔒 All basic commands are LOCKED behind puzzles            ║
+║  🧩 Solve riddles to unlock commands                        ║
+║  🎯 Goal: Unlock all 17 commands to escape!                 ║
+║                                                              ║
+║  Special Commands:                                           ║
+║  • escape-status  - Show your progress                      ║
+║  • escape-help    - Show this help                          ║
+║  • escape-reset   - Reset all progress                      ║
+║  • escape-exit    - Exit the escape room                    ║
+║                                                              ║
+║  Try typing a command like 'ls' to start!                   ║
+╚══════════════════════════════════════════════════════════════╝
+                </pre>
+            </div>
+
+            <!-- Terminal Output -->
+            <div id="terminal-output"></div>
+
+            <!-- Current Input Line -->
+            <div class="input-line">
+                <span class="prompt">escape-room:~$ </span>
+                <input type="text" id="command-input" spellcheck="false" autocomplete="off" autofocus>
+                <span class="cursor">|</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Roasting Window -->
+    <div class="ai-window" id="ai-window">
+        <div class="ai-header">
+            <div class="ai-buttons">
+                <span class="ai-btn-close"></span>
+                <span class="ai-btn-minimize"></span>
+                <span class="ai-btn-maximize"></span>
+            </div>
+            <div class="ai-title">
+                🤖 AI Assistant (Roasting Mode)
+            </div>
+        </div>
+        <div class="ai-content" id="ai-content">
+            <div class="ai-message">
+                🤖 Hello there, future puzzle victim! I'm your AI assistant, and I'll be providing you with... let's call it "motivation" throughout your journey. Don't worry, I'll go easy on you... NOT! 😈
+            </div>
+            <div class="ai-message">
+                💡 Pro tip: When you get an answer wrong, I'll be here to remind you just how spectacularly you've failed. It's for your own good, I promise!
+            </div>
+            <div class="ai-message">
+                🎯 Ready to get roasted? Try solving a puzzle and give me a wrong answer. I dare you!
+            </div>
+        </div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-label">Progress: <span id="progress-text">0/17 commands unlocked</span></div>
+        <div class="progress-bar">
+            <div class="progress-fill" id="progress-fill"></div>
+        </div>
+        <div class="progress-percentage" id="progress-percentage">0%</div>
+    </div>
+
+    <!-- Puzzle Modal -->
+    <div id="puzzle-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>🧩 Puzzle Challenge</h2>
+            </div>
+            <div class="modal-body">
+                <div id="puzzle-description" class="puzzle-description"></div>
+                <div id="puzzle-riddle" class="puzzle-riddle"></div>
+                <div id="puzzle-hint" class="puzzle-hint" style="display: none;"></div>
+                <div class="puzzle-input-container">
+                    <input type="text" id="puzzle-input" placeholder="Enter your answer..." spellcheck="false" autocomplete="off">
+                    <button id="puzzle-submit">Submit</button>
+                </div>
+                <div id="puzzle-feedback" class="puzzle-feedback"></div>
+                <div id="puzzle-attempts" class="puzzle-attempts"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sound Effects -->
+    <audio id="success-sound" preload="auto">
+        <source src="data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvmIaAy6D2fW9diEFl8fv3Y8+DAZUpufzu2IjAzCB3fy8gioEjsXt35NADAZEo+H0vWMbAS2E3fvAfCEEj8Xs4ZBDDABEpN/0v2URBCyF3/m9gCkEiMLs3phADgBLo+b2vm0fAzOJ4Py8fCEEj8bv35BAAABKUN0=" type="audio/wav">
+    </audio>
+    
+    <audio id="error-sound" preload="auto">
+        <source src="data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvmIaAy6D2fW9diEFI8Tv34pCCgNXqOz5tm0gAS2N4Pmu3/" type="audio/wav">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
